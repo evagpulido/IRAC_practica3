@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Dash.js Practica 3</title>
+        <style>
+            video {
+                width: 1280px;
+                height: 720px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+                <video class="dashjs-player" autoplay controls preload="auto">
+                        <source src="https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd" type="application/dash+xml"/>
+                </video>
+        </div>
+        <script src="dash.all.min.js"></script>
+        <script>
+        var player;
+        document.addEventListener("DOMContentLoaded", function () {
+        init();
+        });
+        function init(){
+        player = dashjs.MediaPlayerFactory.create(document.querySelector(".dashjs-player"));
+        };
+        </script>
+    </body>
+</html>
+
