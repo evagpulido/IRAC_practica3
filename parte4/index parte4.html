@@ -11,12 +11,12 @@
         #chart {
             width: 1200px; /* Ancho deseado */
             height: 400px; /* Alto deseado */
-            margin: 10px auto; /* Centrar en la p·gina */
+            margin: 10px auto; /* Centrar en la p√°gina */
         }
     </style>
 </head>
 <body>
-    <h1>Parte 4: VisualizaciÛn avanzada de mÈtricas</h1>
+    <h1>Parte 4: Visualizaci√≥n avanzada de m√©tricas</h1>
     <h2>Equipo 26</h2>
     <div class="code">
         <video class="dashjs-player" autoplay controls preload="auto" muted></video>
@@ -43,7 +43,7 @@
                 }
             }
         };
-        // Crea la gr·fica con Chart.js
+        // Crea la gr√°fica con Chart.js
         var ctx = document.getElementById('chart').getContext('2d');
         var chart = new Chart(ctx, {
             type: 'line',
@@ -125,7 +125,7 @@
                     document.getElementById('bitrate').innerText = bitrate + " Kbps";
                     document.getElementById('representation').innerText = repSwitch.to;
                     
-                    // Actualiza la gr·fica con los nuevos datos
+                    // Actualiza la gr√°fica con los nuevos datos
                     chart.update();
                 }
             }, 500);
